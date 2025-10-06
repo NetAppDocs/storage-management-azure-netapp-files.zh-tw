@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-create-system.html 
 keywords: azure netapp files, create working environment, working environment, system, netapp console 
-summary: 設定 Microsoft Entra 應用程式後，在NetApp控制台中建立Azure NetApp Files系統，以便可以開始建立所需的磁碟區。 
+summary: 設定 Microsoft Entra 應用程式後，在NetApp Console中建立Azure NetApp Files系統，以便可以開始建立所需的磁碟區。 
 ---
-= 在NetApp控制台中建立Azure NetApp Files系統
+= 在NetApp Console中建立Azure NetApp Files系統
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 設定 Microsoft Entra 應用程式後，在NetApp控制台中建立Azu
 
 
 [role="lead"]
-設定 Microsoft Entra 應用程式並將憑證新增至NetApp控制台後，建立Azure NetApp Files系統，以便可以開始建立所需的磁碟區。
+設定 Microsoft Entra 應用程式並將憑證新增至NetApp Console後，建立Azure NetApp Files系統，以便可以開始建立所需的磁碟區。
 
 .步驟
 . 在系統頁面中，選擇*新增系統*。

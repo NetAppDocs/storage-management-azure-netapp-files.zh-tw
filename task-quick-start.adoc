@@ -22,4 +22,4 @@ summary: 透過設定 Microsoft Entra 應用程式和建立系統開始使用Azu
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] link:task-create-system.html["建立Azure NetApp Files系統"]
 [role="quick-margin-para"]
-從NetApp控制台中的“系統”頁面中，選擇“新增系統”>“Microsoft Azure”>“Azure NetApp Files”，然後提供有關 Active Directory 應用程式的詳細資訊。
+從NetApp Console中的“系統”頁面中，選擇“新增系統”>“Microsoft Azure”>“Azure NetApp Files”，然後提供有關 Active Directory 應用程式的詳細資訊。

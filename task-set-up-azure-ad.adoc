@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-azure-ad.html 
 keywords: azure netapp files, azure netapp files permissions, azure permissions, active directory, application, ad application, ad app, app, service principal 
-summary: NetApp控制台需要權限來設定和管理Azure NetApp Files。您可以透過建立和設定 Microsoft Entra 應用程式並取得控制台所需的 Azure 憑證來授予 Azure 帳戶所需的權限。 
+summary: NetApp Console需要權限來設定和管理Azure NetApp Files。您可以透過建立和設定 Microsoft Entra 應用程式並取得控制台所需的 Azure 憑證來授予 Azure 帳戶所需的權限。 
 ---
 = 設定 Microsoft Entra 應用程式
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp控制台需要權限來設定和管理Azure NetApp Files。您�
 
 
 [role="lead"]
-NetApp控制台需要權限來設定和管理Azure NetApp Files。您可以透過建立和設定 Microsoft Entra 應用程式並取得控制台所需的 Azure 憑證來授予 Azure 帳戶所需的權限。
+NetApp Console需要權限來設定和管理Azure NetApp Files。您可以透過建立和設定 Microsoft Entra 應用程式並取得控制台所需的 Azure 憑證來授予 Azure 帳戶所需的權限。
 
 
 
@@ -146,10 +146,10 @@ image:screenshot_anf_app_role.png["Azure 入口網站的螢幕截圖，顯示了
 . 在控制台的左側導覽中，選擇**管理**>**憑證**。
 . 選擇“*新增憑證*”並按照精靈中的步驟操作。
 +
-.. *憑證位置*：選擇*Microsoft Azure > NetApp控制台*。
+.. *憑證位置*：選擇 *Microsoft Azure > NetApp Console*。
 .. *定義憑證*：輸入有關授予所需權限的 Microsoft Entra 服務主體的資訊：
 +
-*** 客戶端機密
+*** 客戶端密鑰
 *** 應用程式（客戶端）ID
 *** 目錄（租戶）ID
 +

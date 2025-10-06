@@ -1,13 +1,13 @@
-= BlueXP現在是NetApp控制台
+= BlueXP現在是NetApp Console
 :allow-uri-read: 
 
 
 
 
-=== BlueXP現在是NetApp控制台
+=== BlueXP現在是NetApp Console
 
 BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。
 
-NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。
+NetApp Console提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。
 
-有關更改的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp控制台發行說明"]。
+有關更改的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp Console發行說明"]。

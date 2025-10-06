@@ -74,10 +74,10 @@ image:screenshot-protocol-smb.png["設定 SMB 磁碟區所需欄位的螢幕截�
 
 == 掛載卷
 
-從NetApp控制台存取安裝說明，以便您可以將磁碟區安裝到主機。
+從NetApp Console存取安裝說明，以便您可以將磁碟區安裝到主機。
 
 .步驟
-. 在NetApp控制台中，開啟Azure NetApp Files系統。
+. 在NetApp Console中，開啟Azure NetApp Files系統。
 . 將遊標移到音量上，然後選擇三個點 `...`音量狀態旁邊。
 . 選擇**安裝卷**。
 +

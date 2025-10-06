@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-remove-system.html 
 keywords: remove azure netapp files, remove anf, remove working environment, system, netapp console 
-summary: 了解如何從NetApp控制台中刪除Azure NetApp Files。它不會刪除您的Azure NetApp Files帳戶或磁碟區。您可以隨時將Azure NetApp Files新增回控制台。 
+summary: 了解如何從NetApp Console中刪除Azure NetApp Files。它不會刪除您的Azure NetApp Files帳戶或磁碟區。您可以隨時將Azure NetApp Files新增回控制台。 
 ---
-= 從NetApp控制台中刪除Azure NetApp Files
+= 從NetApp Console中刪除Azure NetApp Files
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 了解如何從NetApp控制台中刪除Azure NetApp Files。它不會�
 
 
 [role="lead"]
-您可以從NetApp控制台中刪除Azure NetApp Files系統。刪除Azure NetApp Files系統不會刪除你的Azure NetApp Files帳戶、容量池或磁碟區。您可以隨時將Azure NetApp Files新增回控制台。
+您可以從NetApp Console中刪除Azure NetApp Files系統。刪除Azure NetApp Files系統不會刪除你的Azure NetApp Files帳戶、容量池或磁碟區。您可以隨時將Azure NetApp Files新增回控制台。
 
 .步驟
 . 開啟Azure NetApp Files系統。
