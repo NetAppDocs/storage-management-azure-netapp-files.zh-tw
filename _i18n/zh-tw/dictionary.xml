@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="860941d67aa8a8a442ba4a65191838cf" category="doc">支援卷宗模板</block>
+  <block id="28c1b76e8b0c8f418301bc750b4e9f0e" category="paragraph">新的應用程式範本服務使您能夠為Azure NetApp Files設定磁碟區範本。範本應該可以讓您的工作更輕鬆，因為某些磁碟區參數已經在範本中定義，例如容量池、大小、協定、磁碟區應駐留的 VNet 和子網路等等。當一個參數已經預先定義時，您可以直接跳到下一個音量參數。</block>
+  <block id="65d2e55c231c87b516e734e63f823cf5" category="inline-link">了解應用程式模板以及如何在您的環境中使用它們</block>
+  <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
+  <block id="1636ba950a663744d701c73060d64523" category="inline-link">了解如何透過範本建立Azure NetApp Files卷</block>
+  <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
+  <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="doc">不再支援磁碟區模板</block>
+  <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">您無法再從範本建立磁碟區。此操作與BlueXP修復服務相關，但該服務不再可用。</block>
+  <block id="bb123d17400bea06780499dfee0aa1eb" category="doc">需要新的許可</block>
+  <block id="19c74b0651bd4a8c13580d2b199c9dcb" category="paragraph">現在需要以下權限才能從BlueXP管理Azure NetApp Files磁碟區：</block>
+  <block id="d84dc0ddea3fe691a4f90418dade9248" category="paragraph">Microsoft.Network/virtualNetworks/子網路/讀取</block>
+  <block id="642c767a957f879cd5a09310eef9e35e" category="paragraph">讀取虛擬網路子網路需要此權限。</block>
+  <block id="f1c8aee091d7af06827bd81ed4e56e5a" category="paragraph">如果您目前正在從BlueXP管理Azure NetApp Files，則需要將此權限新增至與您先前建立的 Microsoft Entra 應用程式關聯的自訂角色。</block>
+  <block id="49cb664c5b71b8da627e27d37fe9de88" category="inline-link">了解如何設定 Microsoft Entra 應用程式並查看自訂角色權限</block>
+  <block id="dd9368e78fe4f3483d324b6a988d2f87" category="paragraph"><block ref="aa8b5c9ebdcb57c9427e7bd28a70f7d0" category="inline-link-rx"></block> 。</block>
+  <block id="bc2fe31b1e2682a9a79513d792e9c721" category="doc">BlueXP現在是NetApp控制台</block>
+  <block id="745be0d280d894f70c3f88e76f519456" category="paragraph">BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。</block>
+  <block id="7e4f7c37590688c797d9b40e3a3423e3" category="paragraph">NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。</block>
+  <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link">NetApp控制台發行說明</block>
+  <block id="9d88b780dd182bc558e5dd7624d35838" category="paragraph">有關更改的詳細信息，請參閱<block ref="857ac87b6d807bceb0af9d0ff774da69" category="inline-link-rx"></block>。</block>
+  <block id="8314edb21bf66f4096470cb83529f253" category="summary">Azure NetApp Files使企業能夠在 Azure 中遷移和運行其效能密集型和延遲敏感的核心業務關鍵型應用程序，而無需為雲端進行重構。</block>
+  <block id="8b53faee27870b72e0be69261d54a7ee" category="doc">了解Azure NetApp Files</block>
+  <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">特徵</block>
+  <block id="b4afab774d5aae036a66f2e95c63406b" category="list-text">對多種協定的支援使得 Linux 和 Windows 應用程式的「提升和轉移」能夠在 Azure 中無縫運作。</block>
+  <block id="86431e70f2e01436434235b95f27507f" category="list-text">多個效能層級可以與工作負載效能要求緊密結合。</block>
+  <block id="0f5101975c831a1a6350155e818d4cbf" category="list-text">包括 SAP HANA、GDPR 和 HIPAA 在內的領先認證使得最嚴苛的工作負載能夠移轉到 Azure。</block>
+  <block id="8ffb394f66e23734c8bca5453b3c7cb9" category="section-title">NetApp控制台中的其他功能</block>
+  <block id="5d71e19085397e9739480c0c605473b6" category="list-text">直接從NetApp控制台將 NFS 或 SMB 資料移轉到Azure NetApp Files。資料遷移由NetApp Copy 和 Sync 提供支援。</block>
+  <block id="457a1cf5fd2ca976e622a9a914d24bad" category="inline-link">了解有關複製和同步的更多信息</block>
+  <block id="f9b2d2345f65b81f6f23df634577d11f" category="paragraph"><block ref="f9b2d2345f65b81f6f23df634577d11f" category="inline-link-rx"></block></block>
+  <block id="afbefcbdce42a0d7c65e3afe94dbbeb2" category="list-text">使用人工智慧 (AI) 驅動的技術， NetApp資料分類可以幫助您了解資料上下文並識別駐留在Azure NetApp Files帳戶中的敏感資料。</block>
+  <block id="ec140a065c9901de98431ef13e0fd87c" category="inline-link">了解有關數據分類的更多信息</block>
+  <block id="eaf2819473ed7d1df2223c31ed667b65" category="paragraph"><block ref="eaf2819473ed7d1df2223c31ed667b65" category="inline-link-rx"></block></block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="section-title">NetApp控制台</block>
+  <block id="0ab39846423ff61c3d506a74e394e89c" category="paragraph">可透過NetApp控制台存取Azure NetApp Files 。</block>
+  <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp控制台提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。</block>
+  <block id="874065797510ef71853078d085cab4b0" category="paragraph">您不需要許可證或訂閱即可開始使用NetApp控制台，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連接時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。</block>
+  <block id="e955295a860e893d00951c8233972d56" category="paragraph">詳細了解<block ref="2f3134b8970d60226f00e362a8c05c8c" category="inline-link-macro-rx"></block>。</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
+  <block id="b8371ae9d98b29b8335a4aea09cdaff3" category="inline-link">查看Azure NetApp Files定價</block>
+  <block id="4b3f21f8a5b6bf8c27f851053be34ac4" category="paragraph"><block ref="4b3f21f8a5b6bf8c27f851053be34ac4" category="inline-link-rx"></block></block>
+  <block id="212f67b7ceadd9d33adffc72c65fc244" category="paragraph">訂閱和計費由Azure NetApp Files服務維護，而不是由控制台維護。</block>
+  <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">支持的區域</block>
+  <block id="d6c4ca89b6d4950d0522d6198b27af71" category="inline-link">查看受支援的 Azure 區域</block>
+  <block id="267c2c68dd571445da799a8af484fa6e" category="paragraph"><block ref="267c2c68dd571445da799a8af484fa6e" category="inline-link-rx"></block></block>
+  <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">獲取協助</block>
+  <block id="edc3629fc8102552dbd6ec1e10e2b821" category="paragraph">對於與Azure NetApp Files相關的技術支援問題，請使用 Azure 入口網站向 Microsoft 提交支援請求。選擇關聯的 Microsoft 訂閱，然後選擇「儲存」下的「Azure NetApp Files」服務名稱。提供建立 Microsoft 支援請求所需的其餘資訊。</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="section-title">相關連結</block>
+  <block id="416c44c690a4e35eef01658a7b3f9145" category="inline-link-macro">NetApp控制台網站： Azure NetApp Files</block>
+  <block id="a1466f6534f3edf344fd80369eaa022e" category="list-text"><block ref="a1466f6534f3edf344fd80369eaa022e" category="inline-link-macro-rx"></block></block>
+  <block id="6c32a3d0f1a665987b98dde5a0f96d7d" category="inline-link-macro">Azure NetApp Files文檔</block>
+  <block id="f7d58c22d89e4cb8d67018180686bc09" category="list-text"><block ref="f7d58c22d89e4cb8d67018180686bc09" category="inline-link-macro-rx"></block></block>
+  <block id="d1d67231275f058f0d4b1af5546d437b" category="inline-link-macro">複製和同步文檔</block>
+  <block id="543f664393062dba6e415564999842b4" category="list-text"><block ref="543f664393062dba6e415564999842b4" category="inline-link-macro-rx"></block></block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供對版權聲明、商標、專利等的存取。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP、NETAPP 標誌和NetApp商標頁面上列出的標誌是NetApp, Inc. 的商標。其他公司和產品名稱可能是其各自所有者的商標。</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp擁有的專利的最新清單可在以下位置找到：</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開源</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有關NetApp軟體中使用的第三方版權和許可的資訊。</block>
+  <block id="4fd101b562f1e5e8d87ff8710122a42f" category="inline-link">NetApp控制台通知</block>
+  <block id="389273cce6176eeeeb0c3c61db63595e" category="paragraph"><block ref="389273cce6176eeeeb0c3c61db63595e" category="inline-link-rx"></block></block>
+  <block id="77f63e3628e408c02542e65d5fe4a50b" category="summary">設定 Microsoft Entra 應用程式後，在NetApp控制台中建立Azure NetApp Files系統，以便可以開始建立所需的磁碟區。</block>
+  <block id="c49968dd61ea6f65d5f4db3af7724481" category="doc">在NetApp控制台中建立Azure NetApp Files系統</block>
+  <block id="766887eccdacffc3ca3c19a5bf704731" category="paragraph">設定 Microsoft Entra 應用程式並將憑證新增至NetApp控制台後，建立Azure NetApp Files系統，以便可以開始建立所需的磁碟區。</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
+  <block id="4dcda726deabfd502eb98c08c859f4d6" category="list-text">在系統頁面中，選擇*新增系統*。</block>
+  <block id="2083c7d3800af1239db96fe1162f3655" category="list-text">選擇“Microsoft Azure”。</block>
+  <block id="911c1f7504e1a21488e846b256b7bf1e" category="list-text">在「Azure NetApp Files」旁邊，選擇「發現」。</block>
+  <block id="a116599338ea0e8c196a7b0d483995e5" category="list-text">在「詳細資料」頁面上，輸入系統名稱並選擇您先前設定的憑證。</block>
+  <block id="136dc09835924029e4299fa28f17233d" category="list-text">選擇*繼續*。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="f037a4c03dc40d8dbde5fa251b34e80f" category="paragraph">您現在擁有一個Azure NetApp Files系統。</block>
+  <block id="3a0de2df99f7fc279dd35aff0ef31973" category="inline-image-macro">Azure NetApp Files系統的螢幕截圖。</block>
+  <block id="6693c2dfdc2c47e27fc17364d3cc5b03" category="paragraph"><block ref="6693c2dfdc2c47e27fc17364d3cc5b03" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">下一步是什麼？</block>
+  <block id="2d8388ef854dfa09cecb11936ccce248" category="inline-link-macro">開始建立和管理卷</block>
+  <block id="7287a568988e3d4791216dba265eeae9" category="paragraph"><block ref="1e09faaddd6af4b1a47324cf37312df0" category="inline-link-macro-rx"></block> 。</block>
+  <block id="77d4a269f24167619886cc8e413b1300" category="summary">設定係統後，您可以建立Azure NetApp Files帳戶、容量池和磁碟區。</block>
+  <block id="9be5a2eae9bab39aee7d0161c137cd43" category="doc">建立並掛載卷</block>
+  <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">創建卷</block>
+  <block id="15b71829402124199d38fc483f8a71b5" category="paragraph">您可以在新的或現有的Azure NetApp Files帳戶中建立 NFS 或 SMB 磁碟區。</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
+  <block id="871a29db0a928b46295d82cee2357c13" category="list-text">如果要使用 SMB，則必須設定 DNS 和 Active Directory。</block>
+  <block id="943219d5074bb5ad25a6a5caf2ffdd2a" category="list-text">當計劃建立 SMB 磁碟區時，您必須有一個可以連線的 Windows Active Directory 伺服器。您將在建立磁碟區時輸入此資訊。</block>
+  <block id="cec3ad809335330fe1fa6ca172f0f728" category="list-text">開啟Azure NetApp Files系統。</block>
+  <block id="91cdf4212dd8b6d1a4b7c7772990269a" category="list-text">選擇“新增磁碟區”。</block>
+  <block id="8efbe080646813cd33c5297ebb1ef190" category="list-text">在每個頁面上提供所需的資訊：</block>
+  <block id="456471eadf5491bcec7adf6094a8bf4c" category="list-text">* Azure NetApp Files帳戶*：選擇現有的Azure NetApp Files帳戶或建立新帳戶。建立新帳戶時，也必須選擇資源組。您可以使用現有的資源組或建立一個新的資源組。</block>
+  <block id="13ecbacd691c26d682199c2a13ae7ca8" category="inline-image-macro">建立Azure NetApp Files帳戶所需欄位的螢幕截圖，其中包括名稱、Azure 訂閱、位置和資源群組。</block>
+  <block id="be40baf84cfc673a091dfd1b17d7663a" category="paragraph"><block ref="be40baf84cfc673a091dfd1b17d7663a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0dc3251c60a979588ce5f7932e69ba87" category="list-text">*容量池*：選擇現有的容量池或建立新的容量池。</block>
+  <block id="79f05e8f99917560625d1cf3f2d4fc5d" category="inline-link">服務水準</block>
+  <block id="e32293acf9f8f2582959ea59bd2a3d74" category="paragraph">如果建立新的容量池，請指定大小和<block ref="4e715f113c82ee22e8628443964b7ef4" category="inline-link-rx"></block>。</block>
+  <block id="3fba1bba05a9e291509b06015205099e" category="paragraph">容量池的最小大小為 1 TB。</block>
+  <block id="1e29b3affdc5fcfad5dac0ecb9e25d13" category="inline-image-macro">建立容量池選單的螢幕截圖。</block>
+  <block id="0ad86c450721685ee9aecfd1e1083746" category="paragraph"><block ref="0ad86c450721685ee9aecfd1e1083746" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e8ec04eab6a2b3620a8d2306a11ee86" category="inline-link-macro">設定網路要素</block>
+  <block id="7aa03bdde240084e3711de437940eebd" category="list-text">*詳細資料和標籤*：輸入磁碟區名稱和大小、磁碟區所在的 VNet 和子網，並可選擇為磁碟區指定標籤。選擇*標準*或*基本*網路。 *標準* 支援虛擬網路 (VNet) 功能，而 *基本* 減少了 IP 限制並且沒有針對磁碟區的額外 VNet 功能。有關更多信息，請參閱<block ref="aab7e0d4714d2268520d028ad84034e8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="1aff0e06e72482e629d0851b1b33c4c3" category="inline-image-macro">建立磁碟區選項的螢幕截圖。</block>
+  <block id="48e4eece00348c431f69a4bd3fc56c32" category="paragraph"><block ref="48e4eece00348c431f69a4bd3fc56c32" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3b608e06daf087ff8d8ec6c3426b4e86" category="list-text">*協定*：選擇 NFS 或 SMB 協定並輸入所需資訊。</block>
+  <block id="d42c5c8ad61204ac7a04e10c1f76009e" category="paragraph">如果選擇 NFS，則必須輸入 *磁碟區路徑*、選擇 *NFS 版本* 並設定 *匯出策略*。</block>
+  <block id="dea14d87fa3d65df58f3beda6ccb3a30" category="inline-image-macro">設定 NFS 磁碟區所需欄位的螢幕截圖。</block>
+  <block id="5a61706f5d21022cecc3f5f8f8c02352" category="paragraph"><block ref="5a61706f5d21022cecc3f5f8f8c02352" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7dd32198f9c9500fe2062e6beda11335" category="paragraph">如果選擇 SMB，則必須輸入**磁碟區路徑**，然後使用**DNS 主 IP 位址**和 Active Directory 設定詳細資料設定 SMB 連線。</block>
+  <block id="384442b7c021ea920d5444dad3c474e3" category="inline-image-macro">設定 SMB 磁碟區所需欄位的螢幕截圖。</block>
+  <block id="2bcd793ac083ce37802a490c8642c48a" category="paragraph"><block ref="2bcd793ac083ce37802a490c8642c48a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="405c1e241cc1b6685d6c0cc7dbbc8042" category="list-text">如果您希望基於現有磁碟區的快照建立此磁碟區，請從快照名稱下拉清單中選擇快照。</block>
+  <block id="169e200f5675cc6aa192bb4352afc5bc" category="list-text">選擇*新增卷*。</block>
+  <block id="b9976c307b5cece653d212be305d05e7" category="inline-xref">掛載雲卷</block>
+  <block id="d6b2cb02a8761e4b21234194687a5da8" category="list-text">建立磁碟區後，您應該繼續<block ref="119cf8e9ee17747f951e727290c79802" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2a4a19d3d732c5f7aa35fa729ac0d8ac" category="section-title">掛載卷</block>
+  <block id="16e42324a9fa41f7a3c0b449f1b2af15" category="paragraph">從NetApp控制台存取安裝說明，以便您可以將磁碟區安裝到主機。</block>
+  <block id="13179c49acf98d5c7da5a59de66d57c7" category="list-text">在NetApp控制台中，開啟Azure NetApp Files系統。</block>
+  <block id="67f4738c0e1d2b1b1df742199d5c821d" category="list-text">將遊標移到音量上，然後選擇三個點<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>音量狀態旁邊。</block>
+  <block id="3441e294ec1049d9f3692284dddd2e3b" category="list-text">選擇**安裝卷**。</block>
+  <block id="ed098667e58a3c583c4147e4fd6baaa8" category="inline-image-macro">將遊標懸停在磁碟區上時可用的操作的螢幕截圖。</block>
+  <block id="6baf9d765e707f5ba28ae423f89b6f1d" category="paragraph"><block ref="6baf9d765e707f5ba28ae423f89b6f1d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="38aa5b57f82843fe74bb954a343bf4e0" category="list-text">按照說明安裝該磁碟區。</block>
+  <block id="a99fab69b8aa9775fe1767ce605ae8bd" category="summary">NetApp以多種方式為NetApp控制台提供支援。全天候提供廣泛的免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">獲取協助</block>
+  <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp以多種方式為NetApp Console 及其雲端服務提供支援。全天候提供廣泛的免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">獲取雲端提供者文件服務的支持</block>
+  <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品的文檔。</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">適用於ONTAP 的Amazon FSx</block>
+  <block id="359d8b16e442ffaa72e03c95fcd60448" category="list-text"><block ref="359d8b16e442ffaa72e03c95fcd60448" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="153836c062a78213f2aa165322254aa4" category="list-text"><block ref="153836c062a78213f2aa165322254aa4" category="inline-link-macro-rx"></block></block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
+  <block id="0d592360c983f234b130127efee38805" category="list-text"><block ref="0d592360c983f234b130127efee38805" category="inline-link-macro-rx"></block></block>
+  <block id="68e6fe8cde496154d24fd032b4262070" category="paragraph">要獲得特定於NetApp及其儲存解決方案和資料服務的技術支持，請使用下面所述的支援選項。</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自助選項</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項每週 7 天、每天 24 小時免費提供：</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
+  <block id="5bb94d173380c00577f5e04b6f26bb94" category="paragraph">您目前正在檢視的NetApp控制台文件。</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知識庫</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="0e20091afcea2d83d0033a933ba85092" category="paragraph">搜尋NetApp知識庫以尋找有助於解決問題的文章。</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社群</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="777d75a90b107e4f18469f82c4f81fe2" category="paragraph">加入NetApp控制台社區，關注正在進行的討論或創建新的討論。</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">向NetApp支援建立案例</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支援選項之外，您還可以在啟動支援後與NetApp支援專家合作解決任何問題。</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">開始之前</block>
+  <block id="c406bf0ac8ac87bc5bb7132a7351b2ae" category="inline-link">了解如何管理與控制台登入相關的憑證</block>
+  <block id="377118f28487e70bd456993144b72fc7" category="list-text">若要使用「建立案例」功能，您必須先將您的NetApp支援網站憑證與您的控制台登入關聯。<block ref="68c4321a756e3ffe955b62cff6fea46d" category="inline-link-rx"></block> 。</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">如果您要為具有序號的ONTAP系統開啟案例，那麼您的 NSS 帳戶必須與該系統的序號相關聯。</block>
+  <block id="0ab80a63088581d58dcf067051f4c894" category="list-text">在NetApp控制台中，選擇「幫助」&gt;「支援」。</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上，選擇「技術支援」下的可用選項之一：</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">如果您想透過電話與某人交談，請選擇「致電我們」。您將被引導至 netapp.com 上的一個頁面，其中列出了您可以撥打的電話號碼。</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">選擇「建立案例」向NetApp支援專家開立一張票：</block>
+  <block id="a1123cd59d7bd876c080c33906ae65ce" category="list-text">*服務*：選擇與問題相關的服務。例如，* NetApp Console* 特定於控制台內的工作流程或功能的技術支援問題。</block>
+  <block id="987df7518e2afb50a860647c832afd13" category="list-text">*系統*：如果適用於存儲，請選擇* Cloud Volumes ONTAP* 或 *On-Prem*，然後選擇相關的工作環境。</block>
+  <block id="8f8e8a86e5f52b6186a37bdf266c4320" category="paragraph">系統清單位於控制台組織範圍內，並且您在頂部橫幅中選擇了控制台代理。</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*個案優先級*：選擇個案的優先級，可以是低、中、高或嚴重。</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">要了解有關這些優先事項的更多詳細信息，請將滑鼠懸停在欄位名稱旁邊的資訊圖示上。</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*問題描述*：提供問題的詳細描述，包括任何適用的錯誤訊息或您執行的故障排除步驟。</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*其他電子郵件地址*：如果您想讓其他人知道此問題，請輸入其他電子郵件地址。</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*附件（選購）*：一次最多上傳五個附件。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個附件檔案大小限制為 25 MB。支援以下檔案副檔名：txt、log、pdf、jpg/jpeg、rtf、doc/docx、xls/xlsx 和 csv。</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">建立案例表單的螢幕截圖，可讓您向NetApp支援建立案例。</block>
+  <block id="77c89527ec8a9f89b24c5579d19b3b4b" category="paragraph"><block ref="77c89527ec8a9f89b24c5579d19b3b4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">將會出現一個彈出窗口，其中顯示您的支援案例編號。NetApp支援專家將審查您的案例並儘快回覆您。</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">若要查看支援案例的歷史記錄，您可以選擇*設定&gt;時間軸*並尋找名為「建立支援案例」的操作。最右邊的按鈕可讓您展開操作以查看詳細資訊。</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">嘗試建立案例時，您可能會遇到以下錯誤訊息：</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">“您無權針對所選服務建立案例”</block>
+  <block id="178fdaf97b1d1577437f11ee9d5e5229" category="paragraph">此錯誤可能表示 NSS 帳戶及其關聯的記錄公司與NetApp控制台帳戶序號的記錄公司不同（即。960xxxx）或工作環境序號。您可以使用以下選項之一尋求協助：</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">提交非技術案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="e1100b46295d42ed50ba7a4630710164" category="section-title">管理您的支援案例</block>
+  <block id="316508a3483178100806a9d44b49aba2" category="paragraph">您可以直接從控制台檢視和管理活動和已解決的支援案例。您可以管理與您的 NSS 帳戶和公司相關的案例。</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意以下事項：</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">頁面頂部的案例管理儀表板提供兩種視圖：</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側視圖顯示了您提供的使用者 NSS 帳戶在過去 3 個月內開啟的案件總數。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右側的視圖根據您的使用者 NSS 帳戶顯示了過去 3 個月內貴公司層級開設的案件總數。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">表中的結果反映了與您選擇的視圖相關的案例。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">您可以新增或刪除感興趣的列，並且可以過濾優先順序和狀態等列的內容。其他欄位僅提供排序功能。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">請查看以下步驟以了解更多詳細資訊。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">在每個案件級別，我們提供更新案件記錄或關閉尚未關閉或待關閉狀態的案件的功能。</block>
+  <block id="9163e8bca6fd93c080d35ab49e3efdfa" category="list-text">在NetApp控制台中，選擇「幫助」&gt;「支援」。</block>
+  <block id="2019fd19051c3ef493dbbb9ca65bab87" category="list-text">選擇*案例管理*，如果出現提示，請將您的 NSS 帳戶新增至控制台。</block>
+  <block id="75e54e3a6fdbf43ed890669e079d7594" category="paragraph">*案例管理*頁面顯示與您的控制台使用者帳戶關聯的 NSS 帳戶相關的未結案例。這與出現在 *NSS 管理* 頁面頂部的 NSS 帳戶相同。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">（可選）修改表中顯示的資訊：</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">在「組織的案例」下，選擇「查看」以查看與您的公司相關的所有案例。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">透過選擇精確的日期範圍或選擇不同的時間範圍來修改日期範圍。</block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">過濾列的內容。</block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">表格中出現的加號圖標</block>
+  <block id="8ac6be88c1aa79062825a147fb263b0e" category="list-text">透過選擇<block ref="500a336e7ba1c54bcffba4e27bda4eb6" category="inline-image-macro-rx" type="image"></block>然後選擇您想要顯示的列。</block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一列出現的帶有三個點的圖標</block>
+  <block id="049b7b9fab1242f5e715952973c9474d" category="list-text">透過選擇管理現有案例<block ref="7381d9baeaf62eb099ce84f1a21ed5ca" category="inline-image-macro-rx" type="image"></block>並選擇其中一個可用選項：</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*查看案例*：查看有關特定案例的完整詳細資訊。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*更新案例說明*：提供有關您的問題的更多詳細信息，或選擇*上傳文件*以附加最多五個文件。</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*結案*：提供有關結案原因的詳細信息，然後選擇*結案*。</block>
+  <block id="079dcdedf213e51a79059ea332844348" category="summary">設定係統後，您可以管理Azure NetApp Files帳戶、容量池、磁碟區和快照。</block>
+  <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">管理現有捲</block>
+  <block id="a2669b974873fd7c51079b5fcd7d7946" category="paragraph">您可以根據儲存需求的變更來管理現有磁碟區。您可以編輯磁碟區、變更磁碟區的服務等級、管理 Snapshot 副本以及刪除磁碟區。</block>
+  <block id="333d9261c295516441352ec57f1fbd5a" category="section-title">編輯磁碟區的大小和標籤</block>
+  <block id="8cbb6213062bff0f8ae5d9232049a4ae" category="paragraph">建立磁碟區後，您可以隨時修改其大小和標籤。</block>
+  <block id="c6f681662d24d103e517aeb6021115bc" category="list-text">打開系統。</block>
+  <block id="8acb095feb0a7824e13dd4cff484b450" category="list-text">將滑鼠懸停在磁碟區上並選擇*編輯*。</block>
+  <block id="c94fd6f55752bbd9d6ff1d91b90b2493" category="list-text">根據需要修改尺寸和標籤。</block>
+  <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">選擇*應用*。</block>
+  <block id="d541c25f9313db86b9a30cdcc45ecf79" category="section-title">更改卷的服務級別</block>
+  <block id="43e1a577b6b8efef38b66ad99c2617e3" category="paragraph">建立磁碟區後，只要目標容量池已經存在，您就可以隨時變更服務等級。</block>
+  <block id="2b59b840a5b967b90d4d7ab8b92489af" category="list-text">將滑鼠懸停在磁碟區上並選擇*變更服務等級*。</block>
+  <block id="83f077d776e69552c4da718ba6cb17ce" category="list-text">選擇提供所需服務等級的容量池。</block>
+  <block id="b3d12894d56e85cc742cb855ce388cdf" category="list-text">選擇*更改*。</block>
+  <block id="538a392da8eeab76314db8254ebf544b" category="paragraph">磁碟區被移到另一個容量池，但對磁碟區沒有影響。</block>
+  <block id="e479d2534f323a1275e2ed0809755e56" category="section-title">管理 Snapshot 副本</block>
+  <block id="e8ae2d2b47ef8fe5d9635ba5138d815e" category="paragraph">快照副本提供了磁碟區的時間點副本。建立 Snapshot 副本、將資料還原到新磁碟區以及刪除 Snapshot 副本。</block>
+  <block id="072ce5964f5857c89ec5dc601b703af3" category="list-text">將滑鼠懸停在磁碟區上並選擇可用選項之一來管理 Snapshot 副本：</block>
+  <block id="77920e8d9473162a2167976898eaa180" category="list-text">建立 Snapshot 副本</block>
+  <block id="ac5983a9eada1c7d1b2571955cdabebc" category="list-text">*將磁碟區還原為快照*</block>
+  <block id="b4d6c5073915bd6ebc84d2c6c45d666f" category="list-text">*刪除 Snapshot 副本*</block>
+  <block id="df95b2ddbeefe0bd257bae9d1c7d663a" category="list-text">依照提示完成所選的操作。</block>
+  <block id="f91674f3b22216fc484532cd24dda908" category="section-title">刪除卷</block>
+  <block id="9497c556620605c0441cf034ff68a527" category="paragraph">刪除不再需要的磁碟區。</block>
+  <block id="f31dbb59f9910175fac984702077246e" category="list-text">將滑鼠懸停在磁碟區上，然後選擇*刪除*。</block>
+  <block id="085b0943196ae7c43e0a95af45bc731f" category="list-text">確認您要刪除該磁碟區。</block>
+  <block id="a2a31acd90ec883c348fa2a3a6b3ad0e" category="summary">透過設定 Microsoft Entra 應用程式和建立系統開始使用Azure NetApp Files 。</block>
+  <block id="65ce4dce26160be29539699c6623e379" category="doc">入門工作流程</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
+  <block id="6db31f7ad9ac5c8a399245b8721663fc" category="inline-link-macro">設定 Microsoft Entra 應用程式</block>
+  <block id="4825dc1eb26b7e7de707e1565fcb2692" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="ceb71631b57ba9aa78ded8805cd28ebf" category="inline-link-macro-rx"></block></block>
+  <block id="0e63ec6ed03b6c3507b12798044de570" category="paragraph">從 Azure 授予 Microsoft Entra 應用程式並複製應用程式（客戶端）ID、目錄（租用戶）ID 和用戶端機密的值。</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
+  <block id="d89af440b6e93ddf112a507e25b68050" category="inline-link-macro">建立Azure NetApp Files系統</block>
+  <block id="d18f5023685c9294fe182d7d16877e19" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="2409ee245d6810a7b80cc8d958a0bda3" category="inline-link-macro-rx"></block></block>
+  <block id="73ff49181f8f01a9e6f958c584d11ffc" category="paragraph">從NetApp控制台中的“系統”頁面中，選擇“新增系統”&gt;“Microsoft Azure”&gt;“Azure NetApp Files”，然後提供有關 Active Directory 應用程式的詳細資訊。</block>
+  <block id="c7342c3c601c8359ae71653932f0a267" category="summary">了解如何從NetApp控制台中刪除Azure NetApp Files。它不會刪除您的Azure NetApp Files帳戶或磁碟區。您可以隨時將Azure NetApp Files新增回控制台。</block>
+  <block id="4c4e3f3d97240f2733748037254ef11b" category="doc">從NetApp控制台中刪除Azure NetApp Files</block>
+  <block id="a0254c314a7cdb4fe0ec551dd55f3716" category="paragraph">您可以從NetApp控制台中刪除Azure NetApp Files系統。刪除Azure NetApp Files系統不會刪除你的Azure NetApp Files帳戶、容量池或磁碟區。您可以隨時將Azure NetApp Files新增回控制台。</block>
+  <block id="f3894063db4ef14f934b024e99c3b0b2" category="list-text">在頁面右上角，選擇三個點<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>然後*刪除Azure NetApp Files*。</block>
+  <block id="85833ade84c26ef3249600b17effff7e" category="inline-image-macro">顯示刪除Azure NetApp Files系統選項的螢幕截圖。</block>
+  <block id="57407172b547a10eede67bb947489c41" category="paragraph"><block ref="57407172b547a10eede67bb947489c41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="127cb235e55e33faa0d21e9fb1eca92a" category="list-text">在彈出的對話方塊中，選擇*刪除*以確認您要刪除該系統。</block>
+  <block id="02b087a8f0d38e5208db545bfa815d2a" category="summary">NetApp控制台需要權限來設定和管理Azure NetApp Files。您可以透過建立和設定 Microsoft Entra 應用程式並取得控制台所需的 Azure 憑證來授予 Azure 帳戶所需的權限。</block>
+  <block id="28f3ebeb284e106f3db1ecdcf0c0d2ff" category="section-title">步驟 1：建立應用程式</block>
+  <block id="fc08dc165e8e21d029f26ca8cb6f019c" category="paragraph">建立控制台可用於基於角色的存取控制的 Microsoft Entra 應用程式和服務主體。</block>
+  <block id="9e0b4c608c2ed027fef07ddc68aae407" category="inline-link">Microsoft Azure 文件：所需權限</block>
+  <block id="e5b4feab292e545e09dcd2714a5bc078" category="paragraph">您必須在 Azure 中擁有正確的權限才能建立 Active Directory 應用程式並將該應用程式指派給角色。有關詳細信息，請參閱<block ref="c67f5fa38a9480e2db769f61bc8033d8" category="inline-link-rx"></block>。</block>
+  <block id="3acc75f616414df16724fc2f4fe192eb" category="list-text">從 Azure 入口網站開啟 *Microsoft Entra ID* 服務。</block>
+  <block id="abcaecfb112ec16a9054b876f99d7cf4" category="inline-image-macro">顯示 Microsoft Azure 中的 Active Directory 服務的螢幕截圖。</block>
+  <block id="5ee9dc93089da3e95c9863f5259127a3" category="paragraph"><block ref="5ee9dc93089da3e95c9863f5259127a3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b6903fcc348dc2286adda5751418a7f9" category="list-text">在選單中，選擇*應用程式註冊*。</block>
+  <block id="cce8aa4eda34a5338284d12bd518d218" category="list-text">創建應用程式：</block>
+  <block id="6d730ff41d50e6c38331a70a20a46df3" category="list-text">選擇*新註冊*。</block>
+  <block id="c9034af778b085a9440ffcb8389cc4db" category="list-text">指定有關應用程式的詳細資訊：</block>
+  <block id="46beecb01aa2327ae1886dfc53955977" category="list-text">*名稱*：輸入應用程式的名稱。</block>
+  <block id="d2a68aae507dd2f86fe85944bad991fe" category="list-text">*帳戶類型*：選擇帳戶類型（任何類型都可以與控制台一起使用）。</block>
+  <block id="135a1682a5c17ecdf84e57a4dc0c0959" category="list-text">*重定向 URI*：您可以將其留空。</block>
+  <block id="b5249314aff5fae6b6de54ce7f13f16b" category="list-text">選擇*註冊*。</block>
+  <block id="e762ce4f71e8abc9d8deee4d4b7277fe" category="list-text">複製*應用程式（客戶端）ID*和*目錄（租用戶）ID*。</block>
+  <block id="7f2c8aa68f18e907a3c5a92e556d4a8a" category="inline-image-macro">顯示 Microsoft Entra ID 中應用程式的應用程式（用戶端）ID 和目錄（租用戶）ID 的螢幕截圖。</block>
+  <block id="9f4ee24450c803ea94c43753456d43d1" category="paragraph"><block ref="9f4ee24450c803ea94c43753456d43d1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48786893c59bde124604a6e9b0d9da7b" category="paragraph">在控制台中建立Azure NetApp Files系統時，您需要提供應用程式（用戶端）ID 和應用程式的目錄（租用戶）ID。控制台使用 ID 以程式設計方式登入。</block>
+  <block id="715ba30d0bc9581a50ce10a867a6b0e1" category="list-text">為應用程式建立用戶端金鑰，以便控制台可以使用它來透過 Microsoft Entra ID 進行驗證：</block>
+  <block id="05498c836fbd4349a752efbb54e8949c" category="list-text">選擇*憑證和機密&gt;新客戶端機密*。</block>
+  <block id="56c696c4118c8dc3d2947c159fdbbb7c" category="list-text">提供秘密的描述和持續時間。</block>
+  <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">選擇“*新增*”。</block>
+  <block id="a91d60261e2974b6b9f5d3d3d0abacdd" category="list-text">複製客戶端機密的值。</block>
+  <block id="9056be4df2e385c15b0e73176bcf8af3" category="inline-image-macro">Azure 入口網站的螢幕截圖，顯示了 Microsoft Entra 服務主體的用戶端機密。</block>
+  <block id="12714cc76b41e78029a66f330408bd82" category="paragraph"><block ref="12714cc76b41e78029a66f330408bd82" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b85dc31a703949c3212d61389207e866" category="paragraph">您的 AD 應用程式現在已設定完畢，您應該已經複製了應用程式（客戶端）ID、目錄（租用戶）ID 和用戶端金鑰的值。新增Azure NetApp Files系統時，需要在控制台中輸入此資訊。</block>
+  <block id="fb9a62d97d21e431e752501f84624d12" category="section-title">步驟 2：將應用程式指派給角色</block>
+  <block id="4c52768b52ca020200e5a926929d951d" category="paragraph">您必須將服務主體綁定到您的 Azure 訂閱並為其指派具有所需權限的自訂角色。</block>
+  <block id="c7fd7910cc533c79ed570ea74704425d" category="inline-link">在 Azure 中建立自訂角色</block>
+  <block id="332263c2176bf987d0f67b1eb6778cc7" category="list-text"><block ref="fbd7cfd0f7566c43a33652aa81c3b4ab" category="inline-link-rx"></block> 。</block>
+  <block id="10952fdd0e78f38d00c02822bb64d9b1" category="paragraph">以下步驟說明如何從 Azure 入口網站建立角色。</block>
+  <block id="a9c29a42130d729dce82ddfb3ac78e46" category="list-text">打開訂閱並選擇*存取控制（IAM）*。</block>
+  <block id="afbd0cf8e9a12935b7393f61d6be8005" category="list-text">選擇*新增 &gt; 新增自訂角色*。</block>
+  <block id="639c5e298e30f6fe93b20d922ea17933" category="inline-image-macro">顯示在 Azure 入口網站中新增自訂角色的步驟的螢幕截圖。</block>
+  <block id="bf972dc955fe2e7fb9df0a81d06fb348" category="paragraph"><block ref="bf972dc955fe2e7fb9df0a81d06fb348" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f8dea6ae979907327757e0387e92f235" category="list-text">在「*基礎*」標籤中，輸入角色的名稱和描述。</block>
+  <block id="4e3aeed356f1841a4f8d2b701eb57daf" category="list-text">選擇 *JSON*，然後選擇出現在 JSON 格式右上角的 *編輯*。</block>
+  <block id="0b7a672df763c13d4ee88f17e17d5dd5" category="list-text">在_actions_下新增以下權限：</block>
+  <block id="a272bee1eb1df048c1479432c0f8ff7e" category="list-text">選擇*儲存* &gt; *下一步*，然後選擇*建立*。</block>
+  <block id="262bd8aff7acbd549ef1a60afb4d3674" category="list-text">將應用程式指派給您剛剛建立的角色：</block>
+  <block id="f73b1d8fc06d2bae03fb642ee202d04f" category="list-text">從 Azure 入口網站開啟「*訂閱*」。</block>
+  <block id="9d13605979e591928497f3c94aa907c2" category="list-text">選擇訂閱。</block>
+  <block id="4373f2885ec5493eabb4edec6b9422e4" category="list-text">選擇“存取控制 (IAM)”&gt;“新增”&gt;“新增角色分配”。</block>
+  <block id="d949ba029d09ca88dbe8bf63e0f6d495" category="list-text">在「*角色*」標籤中，選擇您建立的自訂角色，然後按一下「*下一步*」。</block>
+  <block id="0a6c621aa17fc5940d876eaadda3bb73" category="list-text">在「*成員*」標籤中，完成以下步驟：</block>
+  <block id="8663f7025266bcb72c4429db8da6c602" category="list-text">保持選取「*使用者、群組或服務主體*」。</block>
+  <block id="049d14d05ca9e7adafff9e17ed48736e" category="list-text">選擇*選擇成員*。</block>
+  <block id="0972e60de3c49ba718e1aa6c9313eebc" category="inline-image-macro">在應用程式新增角色時顯示「成員」標籤的 Azure 入口網站螢幕截圖。</block>
+  <block id="3030207711e0d379c8a6c67f942d7c72" category="paragraph"><block ref="3030207711e0d379c8a6c67f942d7c72" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="33aa57c696b6d88350adf8cda157f866" category="list-text">搜尋應用程式的名稱。</block>
+  <block id="4d947fe0b5c4693f487f4fd1a4295c99" category="paragraph">以下是一個例子：</block>
+  <block id="f6f55020a29188338bc94800ac249ad7" category="inline-image-macro">Azure 入口網站的螢幕截圖，顯示了 Azure 入口網站中的「新增角色指派」表單。</block>
+  <block id="479d1c5255b557f4e6e3afb3beda5366" category="paragraph"><block ref="479d1c5255b557f4e6e3afb3beda5366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c7f74fe40e661c7a8f14797d685e22d3" category="list-text">選擇應用程式然後*選擇*。</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">選擇“下一步”。</block>
+  <block id="85b8cec39bdb05ec73cd076b2359cfd1" category="list-text">選擇*審閱+分配*。</block>
+  <block id="6485d92d18edb38c5174a41b5c3c9bd1" category="paragraph">控制台的服務主體現在具有該訂閱所需的 Azure 權限。</block>
+  <block id="60d6c5f483d163e78b5833c78299cc3a" category="section-title">步驟 3：將憑證新增至控制台</block>
+  <block id="3f08738e91537e6033a1dcddff37fc49" category="paragraph">建立Azure NetApp Files系統時，系統會提示您選擇與服務主體關聯的憑證。您需要在建立系統之前將這些憑證新增至控制台。</block>
+  <block id="48eb7c4b15e6b9d3e36af9b89c1f18c6" category="list-text">在控制台的左側導覽中，選擇**管理**&gt;**憑證**。</block>
+  <block id="c6233dcd0500982eabc73e85f42efc41" category="list-text">選擇“*新增憑證*”並按照精靈中的步驟操作。</block>
+  <block id="8ff72be2e1eb14e01733228ef4483ae5" category="list-text">*憑證位置*：選擇*Microsoft Azure &gt; NetApp控制台*。</block>
+  <block id="10d9864d222fd249479246f9c50df58c" category="list-text">*定義憑證*：輸入有關授予所需權限的 Microsoft Entra 服務主體的資訊：</block>
+  <block id="734082edf44417dd19cc65943aa65c36" category="list-text">客戶端機密</block>
+  <block id="5f92aba7d335e90da33ac643d56ed817" category="list-text">應用程式（客戶端）ID</block>
+  <block id="ac1fdeeca5975112ea2d53b754a4c94f" category="list-text">目錄（租戶）ID</block>
+  <block id="c543fc2439a41974bc2b6bac672d9710" category="inline-xref">創建了 AD 應用程式</block>
+  <block id="10bf7641576f767efba644c9606f6cc9" category="paragraph">你應該在以下情況下獲取此資訊：<block ref="3d73f215425eb80e2dfd60570210a450" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="0899501da68f222ed492b1f56f53b085" category="list-text">*審核*：確認有關新憑證的詳細信息，然後選擇*新增*。</block>
+  <block id="512fd5eb37bb5d3f000a423886a72dd0" category="summary">在向NetApp技術支援部門提交支援案例之前，您需要將NetApp支援網站帳戶新增至NetApp控制台，然後註冊以取得支援。</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以獲得支持</block>
+  <block id="776abbf4d80cbef17bd3c86ff37b2257" category="paragraph">需要進行支援註冊才能獲得針對NetApp控制台及其儲存解決方案和資料服務的技術支援。還需要支援註冊才能啟用Cloud Volumes ONTAP系統的關鍵工作流程。</block>
+  <block id="ba4e23e03f4354a0f1ef2781272c8477" category="paragraph">註冊支援並不能使NetApp獲得雲端提供者文件服務的支援。有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品文件中的「取得協助」。</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援註冊概述</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">啟動支持權利的註冊方式有兩種：</block>
+  <block id="869a868c87f6fb61410cfd773b4f1bab" category="list-text">註冊您的NetApp控制台帳號序號（您的 20 位元 960xxxxxxxxxxxx 序號位於控制台中的「支援資源」頁面上）。</block>
+  <block id="be0b51de4268d87101344aa0368b4403" category="paragraph">這可作為控制台內任何服務的單一支援訂閱 ID。每個控制台帳戶都必須註冊。</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在您的雲端供應商市場中註冊與訂閱相關的Cloud Volumes ONTAP序號（這些是 20 位元 909201xxxxxxxx 序號）。</block>
+  <block id="3cf9fb70d6921dd90583621f028a395f" category="paragraph">這些序號通常稱為_PAYGO 序號_，由NetApp控制台在Cloud Volumes ONTAP部署時產生。</block>
+  <block id="bf516b6498e37e816d29ae43ae132f74" category="paragraph">註冊兩種類型的序號可以實現開立支援票和自動產生案例等功能。透過將NetApp支援網站 (NSS) 帳戶新增至控制台即可完成註冊，如下所述。</block>
+  <block id="ba5983207e417797fefd5b9374ab4a97" category="section-title">註冊NetApp控制台以取得NetApp支持</block>
+  <block id="dcb7105ba6e3d9411b05e726848feb80" category="paragraph">若要註冊支援並啟動支援權利，您的NetApp控制台帳戶中的一名使用者必須將NetApp支援網站帳戶與其控制台登入名稱關聯。如何註冊NetApp支援取決於您是否已經擁有NetApp支援網站 (NSS) 帳號。</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">擁有 NSS 帳戶的現有客戶</block>
+  <block id="ed5bddb699a442b85bc1bb8e1516fe57" category="paragraph">如果您是擁有 NSS 帳戶的NetApp客戶，只需透過控制台註冊即可獲得支援。</block>
+  <block id="76bc427c3d9c4b81dc353078b942f991" category="list-text">選擇“*管理*”&gt;“*憑證*”。</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">選擇*使用者憑證*。</block>
+  <block id="e9451600769b4bf4b20ca941ba9e6d19" category="list-text">選擇*新增 NSS 憑證*並依照NetApp支援網站 (NSS) 驗證提示進行操作。</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">若要確認註冊過程是否成功，請選擇「幫助」圖標，然後選擇「*支援*」。</block>
+  <block id="1d4ea9fd10f6cfcd6f6fe1f861d354a4" category="paragraph">*資源*頁面應顯示您的控制台帳戶已註冊以獲得支援。</block>
+  <block id="afe8240ca62f4b72006980ff64d371b8" category="paragraph">請注意，如果其他控制台使用者尚未將NetApp支援網站帳戶與其登入名稱關聯，他們將看不到相同的支援註冊狀態。但是，這並不意味著您的帳戶沒有註冊支援。只要組織中的一名使用者遵循了這些步驟，您的帳戶就已註冊。</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶但沒有 NSS 帳戶</block>
+  <block id="42eaca1e1c2d9e1f04e932eeaa6d129d" category="paragraph">如果您是現有的NetApp客戶，擁有現有授權和序號但沒有 NSS 帳戶，則需要建立 NSS 帳戶並將其與您的控制台登入關聯。</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp支援網站使用者註冊表</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">透過完成以下操作建立NetApp支援網站帳戶<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">請務必選擇適當的使用者級別，通常為* NetApp客戶/最終使用者*。</block>
+  <block id="bd33c4539c7d6985f6edafd4a4f2ba1d" category="list-text">請務必複製上面用於序號欄位的控制台帳戶序號（960xxxx）。這將加快帳戶處理速度。</block>
+  <block id="9b1f48f88cd439b7a50fe3e76eb8a853" category="list-text">完成以下步驟，將您的新 NSS 帳戶與您的控制台登入名稱關聯<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp全新產品</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp新使用者且沒有 NSS 帳戶，請依照下列步驟操作。</block>
+  <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">在控制台的右上角，選擇「幫助」圖標，然後選擇「*支援*」。</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從支援註冊頁面找到您的帳戶 ID 序號。</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">幫助選單的螢幕截圖，其中支援是第一個選項</block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp 的支援註冊網站</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">導航至<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block>並選擇*我不是註冊的NetApp客戶*。</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填寫必填欄位（帶有紅色星號的欄位）。</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">在*產品線*欄位中，選擇*雲端管理員*，然後選擇適用的計費提供者。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">從上面的步驟 2 複製您的帳戶序號，完成安全性檢查，然後確認您已閱讀 NetApp 的全球資料隱私政策。</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">一封電子郵件會立即發送到提供的郵箱以完成此安全交易。如果幾分鐘內沒有收到驗證電子郵件，請務必檢查您的垃圾郵件資料夾。</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">從電子郵件中確認操作。</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">確認向NetApp提交您的請求並建議您建立NetApp支援網站帳戶。</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">請務必複製上面用於序號欄位的帳戶序號（960xxxx）。這將加快處理速度。</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp應該在過程中與您聯繫。這是針對新用戶的一次性入職培訓。</block>
+  <block id="629757336278be576456cf315303b178" category="paragraph">擁有NetApp支援網站帳號後，請依照下列步驟將該帳號與您的控制台登入關聯<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">關聯 NSS 憑證以獲得Cloud Volumes ONTAP支持</block>
+  <block id="f22d1a855e255746a6b925a3b22f7838" category="paragraph">需要將NetApp支援網站憑證與您的控制台帳戶關聯，才能為Cloud Volumes ONTAP啟用以下關鍵工作流程：</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">註冊即用即付Cloud Volumes ONTAP系統以獲得支持</block>
+  <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">需要提供您的 NSS 帳戶才能啟動對您的系統的支援並獲得NetApp技術支援資源的存取權限。</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">自帶授權 (BYOL) 時部署Cloud Volumes ONTAP</block>
+  <block id="f3cd224f9506684fa3b5e2b89b2a566c" category="paragraph">需要提供您的 NSS 帳戶，以便控制台可以上傳您的許可證金鑰並啟用您購買的期限的訂閱。這包括期限續訂的自動更新。</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">將Cloud Volumes ONTAP軟體升級至最新版本</block>
+  <block id="daf104544b5203a46e1580e1b8583f1f" category="paragraph">將 NSS 憑證與您的NetApp控制台帳戶關聯與將 NSS 帳戶與控制台使用者登入相關聯。</block>
+  <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">這些 NSS 憑證與您的特定控制台帳戶 ID 相關聯。屬於控制台組織的使用者可以從*支援 &gt; NSS 管理*存取這些憑證。</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶級帳戶，則可以新增一個或多個 NSS 帳戶。</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您有合作夥伴或經銷商帳戶，則可以新增一個或多個 NSS 帳戶，但不能與客戶級帳戶一起新增。</block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">選擇*NSS 管理 &gt; 新增 NSS 帳號*。</block>
+  <block id="85b9386ed443776127e099931d73448a" category="list-text">當出現提示時，選擇「*繼續*」以重新導向至 Microsoft 登入頁面。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp使用 Microsoft Entra ID 作為特定於支援和授權的身份驗證服務的身份提供者。</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登入頁面，提供您的NetApp支援網站註冊的電子郵件地址和密碼以執行驗證程序。</block>
+  <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">這些操作使控制台能夠使用您的 NSS 帳戶進行許可證下載、軟體升級驗證和未來支援註冊等操作。</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS 帳戶必須是客戶級帳戶（不是訪客或臨時帳戶）。您可以擁有多個客戶級 NSS 帳戶。</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果該帳戶是合作夥伴等級帳戶，則只能有一個 NSS 帳戶。如果您嘗試新增客戶級 NSS 帳戶且合作夥伴級帳戶已存在，您將收到以下錯誤訊息：</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">“此帳戶不允許使用 NSS 客戶類型，因為已經存在不同類型的 NSS 用戶。”</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您已有客戶級 NSS 帳戶並嘗試新增合作夥伴級帳戶，情況也是如此。</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登入後， NetApp將儲存 NSS 使用者名稱。</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">三個水平點的圖標</block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">這是系統產生的映射到您的電子郵件的 ID。在*NSS 管理*頁面上，您可以顯示來自<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>菜單。</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要刷新登入憑證令牌，還有一個*更新憑證*選項<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>菜單。</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項會提示您再次登入。請注意，這些帳戶的令牌將在 90 天後過期。我們將發布通知來提醒您此事。</block>
+  <block id="90ffe83b5eba4f270fabf9a3fc8697e3" category="summary">了解NetApp控制台中Azure NetApp Files支援的新增功能。</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">什麼是新的</block>
+  <block id="0cefe5f6d17b9891a2607df67286b93f" category="paragraph">了解NetApp控制台中Azure NetApp Files 的新功能。</block>
+  <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025年10月6日</block>
+  <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025年1月13日</block>
+  <block id="944c1cc3564ebb8c58254a0340102350" category="section-title">BlueXP現在支援網路功能</block>
+  <block id="79d2f91b3755917d79acfd5be561d67b" category="paragraph">從BlueXP設定Azure NetApp Files中的磁碟區時，您現在可以指示網路功能。這與本機Azure NetApp Files中提供的功能一致。</block>
+  <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">2024年6月12日</block>
+  <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">2024年4月22日</block>
+  <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021年4月11日</block>
+  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">2021年3月8日</block>
+  <block id="de5b4c52cc860c2f7cacca0bb7f4265f" category="section-title">動態改變服務級別</block>
+  <block id="65ade213f17aabb636c7c98c83fa9121" category="paragraph">現在您可以動態變更磁碟區的服務等級以滿足工作負載需求並最佳化成本。磁碟區被移到另一個容量池，但對磁碟區沒有影響。</block>
+  <block id="f89e84889d5fd0c46e9997ddb21ac922" category="inline-link">了解如何變更卷的服務級別</block>
+  <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block> 。</block>
+  <block id="95fa237a7a6265df02b6172c4be387f7" category="section-title">2020年8月3日</block>
+  <block id="629ca03a8a495acd7bc18927ca4da6cc" category="section-title">Azure NetApp Files設定和管理</block>
+  <block id="2a0093e311ddab71ac3eaea6bf045c9b" category="paragraph">直接從 Cloud Manager 設定和管理Azure NetApp Files。建立Azure NetApp Files系統後，可以完成以下任務：</block>
+  <block id="a42ed9034f13a0f6a3660f2c241f605f" category="list-text">建立 NFS 和 SMB 磁碟區。</block>
+  <block id="0d293213ebed3e92e24e1624dfd19aa2" category="list-text">管理容量池和磁碟區快照</block>
+  <block id="e54595e40dfd177a2a9e671c794a3a4d" category="paragraph">Cloud Manager 可讓您建立、刪除和還原磁碟區快照。您也可以建立新的容量池並指定其服務等級。</block>
+  <block id="5054d68a0b2f03dece3eb72cfaa09427" category="list-text">透過更改磁碟區的大小和管理標籤來編輯磁碟區。</block>
+  <block id="396a3c9fb559d38e68f68ea139b3539a" category="paragraph">直接從 Cloud Manager 建立和管理Azure NetApp Files的能力取代了先前的資料遷移功能。</block>
+  <block id="173fd2f937506a4111b0bc09349619a8" category="section-title">2020年4月5日</block>
+  <block id="02a58c551f186d8f833147198d69fb26" category="section-title">資料移轉到Azure NetApp Files</block>
+  <block id="cc4556ad288d7fd7e7c9f944615b36c2" category="paragraph">現在您可以直接從 Cloud Manager 將 NFS 或 SMB 資料移轉到Azure NetApp Files 。資料同步由BlueXP copy and sync提供支援。</block>
+  <block id="c20fe03ed4060aff466dc9c6002fce66" category="sidebar">Azure NetApp Files是 Microsoft Azure 原生的高效能檔案儲存服務，適用於您的核心業務應用程式。本文檔介紹如何使用NetApp控制台設定和管理Azure NetApp Files</block>
+  <block id="4cb31f0690cc628be510eb7f37ff1267" category="sidebar">Azure NetApp Files是 Microsoft Azure 原生的高效能檔案儲存服務，適用於您的核心業務應用程式。本文檔介紹如何使用NetApp控制台設定和管理Azure NetApp Files。</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速啟動</block>
+  <block id="6ade0d3f74b8a5014c9cb307d47a0cb4" category="sidebar">使用Azure NetApp Files</block>
+  <block id="e2439a8512b353f75391ba9c346bc84d" category="sidebar">管理磁碟區</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格和社區</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp資料服務</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
+  <block id="d75d347ae1d51e933d39fea688b0abf1" category="sidebar">Azure NetApp Files文檔</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">發行說明</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">什麼是新的</block>
+  <block id="54bf50ac4192428b20101638ad32f617" category="sidebar">創建一個系統</block>
+  <block id="a5cd00357f60ad0eaa681bb68df15c6d" category="sidebar">刪除Azure NetApp Files</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識和支持</block>
+</blocks>

@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: concept-azure-netapp-files.html 
+keywords: azure netapp files, cost, price, features, azure netapp files features, anf, supported regions, azure regions, azure netapp files regions 
+summary: Azure NetApp Files使企業能夠在 Azure 中遷移和運行其效能密集型和延遲敏感的核心業務關鍵型應用程序，而無需為雲端進行重構。 
+---
+= 了解Azure NetApp Files
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure NetApp Files使企業能夠在 Azure 中遷移和運行其效能密集型和延遲敏感的核心業務關鍵型應用程序，而無需為雲端進行重構。
+
+
+
+== 特徵
+
+* 對多種協定的支援使得 Linux 和 Windows 應用程式的「提升和轉移」能夠在 Azure 中無縫運作。
+* 多個效能層級可以與工作負載效能要求緊密結合。
+* 包括 SAP HANA、GDPR 和 HIPAA 在內的領先認證使得最嚴苛的工作負載能夠移轉到 Azure。
+
+
+
+
+=== NetApp控制台中的其他功能
+
+* 直接從NetApp控制台將 NFS 或 SMB 資料移轉到Azure NetApp Files。資料遷移由NetApp Copy 和 Sync 提供支援。
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["了解有關複製和同步的更多信息"^]
+
+* 使用人工智慧 (AI) 驅動的技術， NetApp資料分類可以幫助您了解資料上下文並識別駐留在Azure NetApp Files帳戶中的敏感資料。
++
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解有關數據分類的更多信息"^]
+
+
+
+
+
+== NetApp控制台
+
+可透過NetApp控制台存取Azure NetApp Files 。
+
+NetApp控制台提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。
+
+您不需要許可證或訂閱即可開始使用NetApp控制台，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連接時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。
+
+詳細了解link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp控制台"^]。
+
+
+
+== 成本
+
+https://azure.microsoft.com/pricing/details/netapp/["查看Azure NetApp Files定價"^]
+
+訂閱和計費由Azure NetApp Files服務維護，而不是由控制台維護。
+
+
+
+== 支持的區域
+
+https://bluexp.netapp.com/cloud-volumes-global-regions["查看受支援的 Azure 區域"^]
+
+
+
+== 獲取協助
+
+對於與Azure NetApp Files相關的技術支援問題，請使用 Azure 入口網站向 Microsoft 提交支援請求。選擇關聯的 Microsoft 訂閱，然後選擇「儲存」下的「Azure NetApp Files」服務名稱。提供建立 Microsoft 支援請求所需的其餘資訊。
+
+
+
+== 相關連結
+
+* link:https://bluexp.netapp.com/azure-netapp-files["NetApp控制台網站： Azure NetApp Files"^]
+* link:https://learn.microsoft.com/azure/azure-netapp-files/["Azure NetApp Files文檔"^]
+* link:https://docs.netapp.com/us-en/bluexp-copy-sync/index.html["複製和同步文檔"^]
+

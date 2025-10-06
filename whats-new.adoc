@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, netapp console' 
+summary: 了解NetApp控制台中Azure NetApp Files支援的新增功能。 
+---
+= 什麼是新的
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解NetApp控制台中Azure NetApp Files 的新功能。
+
+
+
+== 2025年10月6日
+
+
+
+=== BlueXP現在是NetApp控制台
+
+BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。
+
+NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。
+
+有關更改的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp控制台發行說明"]。
+
+
+
+== 2025年1月13日
+
+
+
+=== BlueXP現在支援網路功能
+
+從BlueXP設定Azure NetApp Files中的磁碟區時，您現在可以指示網路功能。這與本機Azure NetApp Files中提供的功能一致。
+
+
+
+== 2024年6月12日
+
+
+
+=== 需要新的許可
+
+現在需要以下權限才能從BlueXP管理Azure NetApp Files磁碟區：
+
+Microsoft.Network/virtualNetworks/子網路/讀取
+
+讀取虛擬網路子網路需要此權限。
+
+如果您目前正在從BlueXP管理Azure NetApp Files，則需要將此權限新增至與您先前建立的 Microsoft Entra 應用程式關聯的自訂角色。
+
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.html["了解如何設定 Microsoft Entra 應用程式並查看自訂角色權限"] 。
+
+
+
+== 2024年4月22日
+
+
+
+=== 不再支援磁碟區模板
+
+您無法再從範本建立磁碟區。此操作與BlueXP修復服務相關，但該服務不再可用。
+
+
+
+== 2021年4月11日
+
+
+
+=== 支援卷宗模板
+
+新的應用程式範本服務使您能夠為Azure NetApp Files設定磁碟區範本。範本應該可以讓您的工作更輕鬆，因為某些磁碟區參數已經在範本中定義，例如容量池、大小、協定、磁碟區應駐留的 VNet 和子網路等等。當一個參數已經預先定義時，您可以直接跳到下一個音量參數。
+
+
+
+== 2021年3月8日
+
+
+
+=== 動態改變服務級別
+
+現在您可以動態變更磁碟區的服務等級以滿足工作負載需求並最佳化成本。磁碟區被移到另一個容量池，但對磁碟區沒有影響。
+
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["了解如何變更卷的服務級別"] 。
+
+
+
+== 2020年8月3日
+
+
+
+=== Azure NetApp Files設定和管理
+
+直接從 Cloud Manager 設定和管理Azure NetApp Files。建立Azure NetApp Files系統後，可以完成以下任務：
+
+* 建立 NFS 和 SMB 磁碟區。
+* 管理容量池和磁碟區快照
++
+Cloud Manager 可讓您建立、刪除和還原磁碟區快照。您也可以建立新的容量池並指定其服務等級。
+
+* 透過更改磁碟區的大小和管理標籤來編輯磁碟區。
+
+
+直接從 Cloud Manager 建立和管理Azure NetApp Files的能力取代了先前的資料遷移功能。
+
+
+
+== 2020年4月5日
+
+
+
+=== 資料移轉到Azure NetApp Files
+
+現在您可以直接從 Cloud Manager 將 NFS 或 SMB 資料移轉到Azure NetApp Files 。資料同步由BlueXP copy and sync提供支援。

@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: task-manage-volumes.html 
+keywords: azure netapp files, delete volumes, delete nfs volumes, netapp account, capacity pool, change service level 
+summary: 設定係統後，您可以管理Azure NetApp Files帳戶、容量池、磁碟區和快照。 
+---
+= 管理現有捲
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以根據儲存需求的變更來管理現有磁碟區。您可以編輯磁碟區、變更磁碟區的服務等級、管理 Snapshot 副本以及刪除磁碟區。
+
+
+
+== 編輯磁碟區的大小和標籤
+
+建立磁碟區後，您可以隨時修改其大小和標籤。
+
+.步驟
+. 打開系統。
+. 將滑鼠懸停在磁碟區上並選擇*編輯*。
+. 根據需要修改尺寸和標籤。
+. 選擇*應用*。
+
+
+
+
+== 更改卷的服務級別
+
+建立磁碟區後，只要目標容量池已經存在，您就可以隨時變更服務等級。
+
+.步驟
+. 打開系統。
+. 將滑鼠懸停在磁碟區上並選擇*變更服務等級*。
+. 選擇提供所需服務等級的容量池。
+. 選擇*更改*。
+
+
+.結果
+磁碟區被移到另一個容量池，但對磁碟區沒有影響。
+
+
+
+== 管理 Snapshot 副本
+
+快照副本提供了磁碟區的時間點副本。建立 Snapshot 副本、將資料還原到新磁碟區以及刪除 Snapshot 副本。
+
+.步驟
+. 打開系統。
+. 將滑鼠懸停在磁碟區上並選擇可用選項之一來管理 Snapshot 副本：
++
+** 建立 Snapshot 副本
+** *將磁碟區還原為快照*
+** *刪除 Snapshot 副本*
+
+
+. 依照提示完成所選的操作。
+
+
+
+
+== 刪除卷
+
+刪除不再需要的磁碟區。
+
+.步驟
+. 打開系統。
+. 將滑鼠懸停在磁碟區上，然後選擇*刪除*。
+. 確認您要刪除該磁碟區。
+

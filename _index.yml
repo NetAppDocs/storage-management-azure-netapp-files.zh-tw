@@ -1,0 +1,29 @@
+---
+indexpage:
+  title: Azure NetApp Files文檔
+  summary: Azure NetApp Files是 Microsoft Azure 原生的高效能檔案儲存服務，適用於您的核心業務應用程式。本文檔介紹如何使用NetApp控制台設定和管理Azure
+    NetApp Files。
+  keywords: Azure NetApp Files, netapp console
+  lead: Azure NetApp Files是 Microsoft Azure 原生的高效能檔案儲存服務，適用於您的核心業務應用程式。本文檔介紹如何使用NetApp控制台設定和管理Azure
+    NetApp Files
+  tiles:
+  - title: 開始
+    links:
+    - title: 了解Azure NetApp Files
+      url: concept-azure-netapp-files.html
+    - title: 快速啟動
+      url: task-quick-start.html
+  - title: 使用Azure NetApp Files
+    links:
+    - title: 創建卷
+      url: task-create-volumes.html
+    - title: 管理磁碟區
+      url: task-manage-volumes.html
+  - title: 部落格和社區
+    links:
+    - title: NetApp控制台
+      url: https://www.netapp.com/console
+    - title: NetApp資料服務
+      url: https://www.netapp.com/data-services/
+    - title: NetApp社群
+      url: https://community.netapp.com/

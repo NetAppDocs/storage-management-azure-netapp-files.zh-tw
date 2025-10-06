@@ -1,0 +1,13 @@
+= 支援卷宗模板
+:allow-uri-read: 
+
+
+
+
+=== 支援卷宗模板
+
+新的應用程式範本服務使您能夠為Azure NetApp Files設定磁碟區範本。範本應該可以讓您的工作更輕鬆，因為某些磁碟區參數已經在範本中定義，例如容量池、大小、協定、磁碟區應駐留的 VNet 和子網路等等。當一個參數已經預先定義時，您可以直接跳到下一個音量參數。
+
+* https://docs.netapp.com/us-en/bluexp-remediation/concept-resource-templates.html["了解應用程式模板以及如何在您的環境中使用它們"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html["了解如何透過範本建立Azure NetApp Files卷"]
+

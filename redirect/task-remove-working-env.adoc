@@ -1,0 +1,8 @@
+---
+permalink: bluexp-azure-netapp-files/task-remove-working-env.html 
+redirect: storage-management-azure-netapp-files/task-remove-system.html 
+---
+= 
+:allow-uri-read: 
+
+

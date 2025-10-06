@@ -1,0 +1,17 @@
+= 需要新的許可
+:allow-uri-read: 
+
+
+
+
+=== 需要新的許可
+
+現在需要以下權限才能從BlueXP管理Azure NetApp Files磁碟區：
+
+Microsoft.Network/virtualNetworks/子網路/讀取
+
+讀取虛擬網路子網路需要此權限。
+
+如果您目前正在從BlueXP管理Azure NetApp Files，則需要將此權限新增至與您先前建立的 Microsoft Entra 應用程式關聯的自訂角色。
+
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.html["了解如何設定 Microsoft Entra 應用程式並查看自訂角色權限"] 。

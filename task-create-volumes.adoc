@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: task-create-volumes.html 
+keywords: azure netapp files, create volumes, create nfs volumes, netapp account, capacity pool, create capacity pool, mount path, get mount path, find mount path, mount volume 
+summary: 設定係統後，您可以建立Azure NetApp Files帳戶、容量池和磁碟區。 
+---
+= 建立並掛載卷
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+設定係統後，您可以建立Azure NetApp Files帳戶、容量池和磁碟區。
+
+
+
+== 創建卷
+
+您可以在新的或現有的Azure NetApp Files帳戶中建立 NFS 或 SMB 磁碟區。
+
+.開始之前
+* 如果要使用 SMB，則必須設定 DNS 和 Active Directory。
+* 當計劃建立 SMB 磁碟區時，您必須有一個可以連線的 Windows Active Directory 伺服器。您將在建立磁碟區時輸入此資訊。
+
+
+.步驟
+. 開啟Azure NetApp Files系統。
+. 選擇“新增磁碟區”。
+. 在每個頁面上提供所需的資訊：
++
+** * Azure NetApp Files帳戶*：選擇現有的Azure NetApp Files帳戶或建立新帳戶。建立新帳戶時，也必須選擇資源組。您可以使用現有的資源組或建立一個新的資源組。
++
+image:screenshot_anf_create_account.png["建立Azure NetApp Files帳戶所需欄位的螢幕截圖，其中包括名稱、Azure 訂閱、位置和資源群組。"]
+
+** *容量池*：選擇現有的容量池或建立新的容量池。
++
+如果建立新的容量池，請指定大小和 https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels["服務水準"^]。
+
++
+容量池的最小大小為 1 TB。
+
++
+image:screenshot-create-capacity-pool.png["建立容量池選單的螢幕截圖。"]
+
+** *詳細資料和標籤*：輸入磁碟區名稱和大小、磁碟區所在的 VNet 和子網，並可選擇為磁碟區指定標籤。選擇*標準*或*基本*網路。 *標準* 支援虛擬網路 (VNet) 功能，而 *基本* 減少了 IP 限制並且沒有針對磁碟區的額外 VNet 功能。有關更多信息，請參閱link:https://learn.microsoft.com/azure/azure-netapp-files/configure-network-features["設定網路要素"^] 。
++
+image:screenshot-create-volume.gif["建立磁碟區選項的螢幕截圖。"]
+
+** *協定*：選擇 NFS 或 SMB 協定並輸入所需資訊。
++
+如果選擇 NFS，則必須輸入 *磁碟區路徑*、選擇 *NFS 版本* 並設定 *匯出策略*。
+
++
+image:screenshot-protocol-nfs.png["設定 NFS 磁碟區所需欄位的螢幕截圖。"]
+
++
+如果選擇 SMB，則必須輸入**磁碟區路徑**，然後使用**DNS 主 IP 位址**和 Active Directory 設定詳細資料設定 SMB 連線。
+
++
+image:screenshot-protocol-smb.png["設定 SMB 磁碟區所需欄位的螢幕截圖。"]
+
+
+
+. 如果您希望基於現有磁碟區的快照建立此磁碟區，請從快照名稱下拉清單中選擇快照。
+. 選擇*新增卷*。
+. 建立磁碟區後，您應該繼續<<掛載卷,掛載雲卷>>。
+
+
+
+
+== 掛載卷
+
+從NetApp控制台存取安裝說明，以便您可以將磁碟區安裝到主機。
+
+.步驟
+. 在NetApp控制台中，開啟Azure NetApp Files系統。
+. 將遊標移到音量上，然後選擇三個點 `...`音量狀態旁邊。
+. 選擇**安裝卷**。
++
+image:screenshot-volume-options.png["將遊標懸停在磁碟區上時可用的操作的螢幕截圖。"]
+
+. 按照說明安裝該磁碟區。
+
